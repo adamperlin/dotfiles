@@ -90,18 +90,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias getip="python -c \"import socket; ip=socket.gethostbyname(socket.gethostname()); print(ip)\"" 
-welcome () {
-	echo "Remember, with great power comes great responsibility."
-	echo "Have a lot of fun!" 
-}
 
-
-weather() {
-
-}
-init () {
-	export WALLPAPER=/home/adam/Pictures/OtherWallpapers/WP_Desktopography-2560x1440_00081.jpg 
-	#welcome
-} 
-
-init 
