@@ -158,15 +158,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-#order += "volume master"
-#volume master {
-#	format = ". %volume " 
-#	format_muted = ". %volume" 
-#	device = "default" 
-#	mixer = "Master" 
-#	mixer_idx = 0 
-#}
-#
+
 
 bindsym $mod+r mode "resize"
 
