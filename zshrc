@@ -8,11 +8,12 @@ export ZSH=$HOME/Documents/oh-my-zsh
 #ZSH_THEME="nicoulaj"
 #ZSH_THEME="lambda"
 #ZSH_THEME="agnoster"
-ZSH_THEME="cypher"
+#ZSH_THEME="cypher"
 #ZSH_THEME="miloshadzic" 
 #ZSH_THEME=theunraveler
 #ZSH_THEME="gallois"
 #ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell" 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -89,5 +90,22 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#git aliases 
+alias gc="git clone" 
+alias gstat="git status"
+alias gck="git checkout"
+alias gp="git push"
+alias gpom="git push origin master"
+alias gpl="git pull"
+alias gf="git fetch"
+alias grh="git reset --hard"
+alias gr="git reset HEAD"
+
+#other useful aliases...
+alias e="exit"
+alias v="vim" 
+alias g="grep" 
+alias utar="tar -xvf" 
+alias setgpath="export GOPATH=$(pwd)" 
 alias getip="python -c \"import socket; ip=socket.gethostbyname(socket.gethostname()); print(ip)\"" 
 
