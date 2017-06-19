@@ -13,6 +13,7 @@ export ZSH=$HOME/Documents/oh-my-zsh
 #ZSH_THEME=theunraveler
 #ZSH_THEME="gallois"
 #ZSH_THEME="agnoster"
+#ZSH_THEME="af-magic"
 ZSH_THEME="robbyrussell" 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -108,4 +109,6 @@ alias g="grep"
 alias utar="tar -xvf" 
 alias setgpath="export GOPATH=$(pwd)" 
 alias getip="python -c \"import socket; ip=socket.gethostbyname(socket.gethostname()); print(ip)\"" 
-
+alias vim="nvim" 
+alias oldvim="/usr/bin/vim" 
+alias celar="clear"
