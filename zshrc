@@ -9,16 +9,18 @@ export ZSH=$HOME/Documents/oh-my-zsh
 #ZSH_THEME="lambda"
 #ZSH_THEME="agnoster"
 #ZSH_THEME="cypher"
-#ZSH_THEME="miloshadzic" 
+#ZSH_THEME="miloshadzic"
 #ZSH_THEME=theunraveler
 #ZSH_THEME="gallois"
 #ZSH_THEME="agnoster"
 #ZSH_THEME="af-magic"
-ZSH_THEME="robbyrussell" 
+ZSH_THEME="robbyrussell"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+#if [-z "$ON_LINUX"]; then
+  #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#fi
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
@@ -62,7 +64,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:/opt/cross/bin:$PATH
+export PATH=$HOME/go/bin:$HOME/bin:/usr/local/bin:/opt/cross/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -91,8 +93,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#git aliases 
-alias gc="git clone" 
+#git aliases
+alias gc="git clone"
 alias gstat="git status"
 alias gck="git checkout"
 alias gp="git push"
@@ -103,12 +105,14 @@ alias grh="git reset --hard"
 alias gr="git reset HEAD"
 
 #other useful aliases...
+
 alias e="exit"
-alias v="vim" 
-alias g="grep" 
-alias utar="tar -xvf" 
-alias setgpath="export GOPATH=$(pwd)" 
-alias getip="python -c \"import socket; ip=socket.gethostbyname(socket.gethostname()); print(ip)\"" 
-alias vim="nvim" 
-alias oldvim="/usr/bin/vim" 
+alias v="vim"
+alias g="grep"
+alias utar="tar -xvf"
+alias setgpath="export GOPATH=$(pwd)"
+alias getip="python -c \"import socket; ip=socket.gethostbyname(socket.gethostname()); print(ip)\""
+alias vim="nvim"
+alias oldvim="/usr/bin/vim"
 alias celar="clear"
+alias cdz="cd $HOME/go/src/github.com/influxdata/telegraf/plugins/inputs/zipkin"
