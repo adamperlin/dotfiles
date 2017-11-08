@@ -64,11 +64,12 @@ plugins=(git)
 
 # User configuration
 
-export PATH=$HOME/go/bin:$HOME/bin:/usr/local/bin:/opt/cross/bin:$PATH
+export PATH=$HOME/.cargo/bin:$HOME/go/bin:$HOME/bin:/usr/local/bin:/opt/cross/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
+export GOPATH=$HOME/go
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -93,6 +94,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 #git aliases
 alias gc="git clone"
 alias gstat="git status"
@@ -100,12 +102,13 @@ alias gck="git checkout"
 alias gp="git push"
 alias gpom="git push origin master"
 alias gpl="git pull"
+alias gpr="git pull --rebase"
 alias gf="git fetch"
 alias grh="git reset --hard"
 alias gr="git reset HEAD"
 
 #other useful aliases...
-
+alias c="clear"
 alias e="exit"
 alias v="vim"
 alias g="grep"
@@ -115,4 +118,4 @@ alias getip="python -c \"import socket; ip=socket.gethostbyname(socket.gethostna
 alias vim="nvim"
 alias oldvim="/usr/bin/vim"
 alias celar="clear"
-alias cdz="cd $HOME/go/src/github.com/influxdata/telegraf/plugins/inputs/zipkin"
+alias gpath="cd $GOPATH"

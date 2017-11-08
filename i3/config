@@ -11,7 +11,7 @@
 
 set $mod Mod4
 #exec --no-startup-id feh --bg-scale /home/adam/Pictures/Wallpapers/space_wallpaper_hd_background_download_desktop8.jpg
-exec --no-startup-id feh --bg-scale /home/adam/Pictures/Wallpapers/forests13.jpg
+#exec --no-startup-id feh --bg-scale /home/adam/Pictures/Wallpapers/forests13.jpg
 
 #exec --no-startup-id feh --bg-scale /home/adam/Downloads/gopher.jpg 
 exec --no-startup-id nm-applet
