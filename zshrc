@@ -19,7 +19,7 @@ ZSH_THEME="robbyrussell"
 # CASE_SENSITIVE="true"
 
 #if [-z "$ON_LINUX"]; then
-  #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #fi
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
