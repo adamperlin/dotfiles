@@ -23,6 +23,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'jacoborus/tender.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'hzchirs/vim-material'
+Plug 'octol/vim-cpp-enhanced-highlight'
 "colorscheme material-theme
 "colorscheme spacemacs-theme 
 "colorscheme material 
@@ -46,7 +47,7 @@ call Basics_init()
 syntax enable 
 set background=dark 
 
-colorscheme vim-material
+"colorscheme vim-material
 "colorscheme solarized
 
 "highlight Normal ctermbg=darkblue 
@@ -56,7 +57,7 @@ colorscheme vim-material
 "colorscheme solarized 
 "colorscheme gruvbox
 "colorscheme github
-"colorscheme molokai
+colorscheme molokai
 "colorscheme monokai
 
 if (has("termguicolors"))
@@ -86,12 +87,16 @@ function! Init_vim_go()
 
 
 endfunction
-
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_experimental_template_highlight = 1
 "let g:gruvbox_contrast_dark = 1
 set background=dark
 set autowrite 
 call Init_vim_go() 
 "set clipboard=unnamedplus 
 "set paste
-"inoremap { {<CR>}<Esc>ko
+inoremap { {<CR>}<Esc>ko
 "autocmd vimenter * NERDTree 
+vnoremap <C-c> "+yy

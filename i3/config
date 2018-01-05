@@ -189,8 +189,8 @@ bar {
         status_command py3status
         separator_symbol " | "
         colors {
-            background #1e1e1e00
-		#	background #002b36
+            #background #1e1e1e00
+			background #000000
             statusline #59aa5e
             focused_workspace #59aa5e #eee9d500 #59aa5e
             inactive_workspace #2aa19800 #2aa19800 #59aa5e
