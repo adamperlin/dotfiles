@@ -119,3 +119,6 @@ alias vim="nvim"
 alias oldvim="/usr/bin/vim"
 alias celar="clear"
 alias gpath="cd $GOPATH"
+alias up="sudo pacman -Syu"
+
+eval $(thefuck --alias)
