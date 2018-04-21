@@ -24,6 +24,7 @@ Plug 'jacoborus/tender.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'hzchirs/vim-material'
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'leafgarland/typescript-vim'
 "colorscheme material-theme
 "colorscheme spacemacs-theme 
 "colorscheme material 
@@ -100,3 +101,4 @@ call Init_vim_go()
 inoremap { {<CR>}<Esc>ko
 "autocmd vimenter * NERDTree 
 vnoremap <C-c> "+yy
+vnoremap <C-v> "+p 

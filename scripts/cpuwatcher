@@ -1,0 +1,9 @@
+#!/bin/bash
+
+do_watch() {
+
+watch grep \"cpu MHz\" /proc/cpuinfo 
+
+}
+
+do_watch 

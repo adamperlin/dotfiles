@@ -14,7 +14,8 @@ export ZSH=$HOME/Documents/oh-my-zsh
 #ZSH_THEME="gallois"
 #ZSH_THEME="agnoster"
 #ZSH_THEME="af-magic"
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="adam-custom"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -60,7 +61,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git battery)
 
 # User configuration
 
