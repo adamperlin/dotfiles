@@ -25,6 +25,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'hzchirs/vim-material'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'leafgarland/typescript-vim'
+Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 "colorscheme material-theme
 "colorscheme spacemacs-theme 
 "colorscheme material 
@@ -74,6 +75,8 @@ function! Init_vim_go()
 	let g:go_highlight_operators = 1
 	let g:go_highlight_build_constraints = 1
 	let g:go_fmt_command = "goimports"
+	let g:go_version_warning = 0
+	let g:go_autocomplete = 1
 	map <C-n> :cnext<CR> 
 	map <C-m> :cprevious<CR> 
 	noremap <leader>a :cclose<CR> 
@@ -102,3 +105,5 @@ inoremap { {<CR>}<Esc>ko
 "autocmd vimenter * NERDTree 
 vnoremap <C-c> "+yy
 vnoremap <C-v> "+p 
+nnoremap d "_d
+vnoremap d "_d

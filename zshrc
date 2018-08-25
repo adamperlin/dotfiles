@@ -20,8 +20,9 @@ ZSH_THEME="adam-custom"
 # CASE_SENSITIVE="true"
 
 #if [-z "$ON_LINUX"]; then
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #fi
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
@@ -121,5 +122,5 @@ alias oldvim="/usr/bin/vim"
 alias celar="clear"
 alias gpath="cd $GOPATH"
 alias up="sudo pacman -Syu"
-
+alias influxgoto="cd /Users/adamperlin/go/src/github.com/influxdata/platform/query"
 eval $(thefuck --alias)
