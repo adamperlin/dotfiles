@@ -1,5 +1,13 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/Documents/oh-my-zsh
+source ~/antigen.zsh
+#export ZSH=$HOME/Documents/oh-my-zsh
+
+antigen use oh-my-zsh
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle git
+antigen theme robbyrussell
+antigen apply
+
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -15,14 +23,13 @@ export ZSH=$HOME/Documents/oh-my-zsh
 #ZSH_THEME="agnoster"
 #ZSH_THEME="af-magic"
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="adam-custom"
+#ZSH_THEME="adam-custom"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
 #if [-z "$ON_LINUX"]; then
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #fi
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
@@ -62,14 +69,14 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git battery)
+#plugins=(git battery)
 
 # User configuration
 
 export PATH=$HOME/.cargo/bin:$HOME/go/bin:$HOME/bin:/usr/local/bin:/opt/cross/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 export GOPATH=$HOME/go
 # You may need to manually set your language environment
